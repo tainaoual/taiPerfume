@@ -3,7 +3,7 @@ package com.example.taiperfume.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
+//                                                      <!-- create a new branch -->
 import javax.persistence.*;
 
 @Table(name="tai_perfume")
