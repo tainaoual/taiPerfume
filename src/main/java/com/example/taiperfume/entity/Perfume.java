@@ -3,6 +3,7 @@ package com.example.taiperfume.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
@@ -11,17 +12,19 @@ import javax.persistence.*;
 @Setter
 @Getter
 @ToString
+@Component
 public class Perfume {
     @Id
     @GeneratedValue
     private  Long id;
-    @Column(name = "name")
+    @Column(name = "name",nullable = false,updatable = false)
     private  String name;
-    @Column(name="brand")
+    @Column(name="brand",nullable = false,updatable = false)
     private  String brand;
-    @Column(name="store")
+    @Column(name="store",nullable = false,updatable = false)
     private  String store;
 
 
-
+    public static void setId(int i) {
+    }
 }
